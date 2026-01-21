@@ -1,0 +1,111 @@
+.navbar {
+    height: var(--nav-height);
+    /* Frosted Glass Effect */
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    transition: all 0.3s ease;
+}
+
+.navbar:hover {
+    background: rgba(15, 23, 42, 0.95);
+}
+
+.logo {
+    color: var(--text-light);
+    font-size: 1.6rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.logo span {
+    color: #818cf8; /* Soft Indigo */
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.nav-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: color 0.3s;
+    position: relative;
+    padding: 5px 0;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+/* Animated Underline */
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background: #818cf8;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.btn-contact {
+    background: var(--primary-gradient);
+    padding: 10px 24px;
+    border-radius: 50px;
+    color: white !important;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(79, 70, 229, 0.3);
+    border: 2px solid transparent;
+}
+
+.btn-contact:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(79, 70, 229, 0.6);
+}
+
+.btn-contact::after {
+    display: none;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 6px;
+    padding: 10px;
+}
+
+.bar {
+    width: 28px;
+    height: 3px;
+    background-color: white;
+    border-radius: 4px;
+    transition: 0.3s;
+}
