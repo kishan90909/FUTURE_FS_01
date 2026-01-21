@@ -3,7 +3,7 @@
 <div align="center">
 <h3>
 🔗 Live Demo:
-<a href="portfolio-kishan001.netlify.app" target="_blank">
+<a href="https://portfolio-kishan001.netlify.app/" target="_blank">
 View Live Site
 </a>
 </h3>
